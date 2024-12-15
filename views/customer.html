@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Management</h1>
+    </header>
+    <section class="management-section">
+        <form id="addCustomerForm">
+            <h2>Add New Customer</h2>
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <button type="submit">Add Customer</button>
+        </form>
+        <div>
+            <h2>Customer List</h2>
+            <button onclick="toggleTable('customerTable')">Show Customers</button> <!-- Button to show table -->
+            <table id="customerTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="/public/js/customer.js"></script>
+    <script>
+        function toggleTable(tableId) {
+            const table = document.getElementById(tableId);
+            table.style.display = table.style.display === 'none' ? 'table' : 'none'; // Toggle visibility
+        }
+    </script>
+</body>
+</html>

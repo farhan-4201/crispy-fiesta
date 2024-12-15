@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="/public/css/syles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">RestoManage</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to RestoManage</h1>
+        <p>Your ultimate restaurant management solution</p>
+        <div class="slider">
+            <div class="slider-container">
+                <img src="/burger.jpeg" alt="Burger">
+                <img src="/pizza.jpeg" alt="Pizza">
+                <img src="/fastfood.jpeg" alt="Fast Food">
+                <img src="/dessert.jpg" alt="Dessert">
+            </div>
+        </div>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>RestoManage provides state-of-the-art solutions to help restaurants manage their operations efficiently. From customer data to employee management, we handle it all.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3><a href="/views/customer.html">Customer Management</a></h3>
+                <p>Track and manage customer data effortlessly.</p>
+            </div>
+            <div class="service">
+                <h3><a href="/views/employee.html">Employee Management</a></h3>
+                <p>Organize employee schedules and roles.</p>
+            </div>
+            <div class="service">
+                <h3><a href="/views/store.html">Store Management</a></h3>
+                <p>Oversee multiple stores with a centralized system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-scroll">
+            <img src="/burger.jpeg" alt="Burger">
+            <img src="/pizza.jpeg" alt="Pizza">
+            <img src="/dessert.jpg" alt="Dessert">
+            <img src="/shakes.jpeg" alt="shakes">
+            <img src="/fries.jpeg" alt="fries">
+            <img src="/wings.jpg" alt="wings">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 RestoManage. All rights reserved.</p>
+    </footer>
+
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Management</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Store Management</h1>
+    </header>
+
+    <section class="management-section">
+        <form id="addStoreForm">
+            <h2>Add New Store</h2>
+            <label for="storeName">Store Name:</label>
+            <input type="text" id="storeName" name="storeName" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="sector">Sector:</label>
+            <input type="text" id="sector" name="sector" required>
+            
+            <button type="submit">Add Store</button>
+        </form>
+
+        <div>
+            <h2>Store List</h2>
+            <button onclick="toggleTable('storeTable')">Show Stores</button> <!-- Button to show table -->
+            <table id="storeTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Sector</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RestoManage. All rights reserved.</p>
+    </footer>
+
+    <script src="/public/js/store.js"></script>
+    <script>
+        function toggleTable(tableId) {
+            const table = document.getElementById(tableId);
+            table.style.display = table.style.display === 'none' ? 'table' : 'none'; // Toggle visibility
+        }
+    </script>
+</body>
+</html>
